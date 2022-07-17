@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    background: #d787eb;
+    height: 110px;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+nav ul li a{
+    color: #461453;
+    font-size: 30px;
+    padding: 7px 13px;
+    font-family: 'Pacifico';
+}
+nav ul li a:hover{
+    color: #9c15be;
+    transition: 0.4s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #461453;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+   
+.user{
+    font-size: 27px;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+    float: right;
+    margin-top: -78px;
+    margin-right: 35px;
+    padding: 0 80px;
+}
+.hola:hover{
+    color: #9c15be;
+    transition: 0.3s;
+}
+.hola{color:#461453;
+}
+.enlace{
+    position: absolute;
+    padding: 10px 80px;
+}
+.logo{
+    height: 100px;
+}
+
+/*principal*/
+
+.principal{
+    background-image: url("/imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.main_principal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion {
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #461453a2;
+    color: #d787eb;
+    font-family: 'Pacifico';
+    border-radius: 28px;
+}
+
+/*Pop-up Iniciar sesión*/
+
+.popup-container{ 
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+.popup-container a:last-child{
+    margin-left: 15px;
+  } 
+
+.button-popup, .button-popup2, .button-send{
+    padding: 8px;
+    background: #461453;
+    font-family: "pacifico";
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #d787eb;
+    border-radius: 15px;
+    color: #d787eb;
+    box-shadow: 6px 6px 29px -4px #461453;
+    transition: 0.3s;
+    text-decoration: none;
+}
+  
+  .button-popup:hover, .button-popup2:hover, .button-send:hover{
+    color:#582963;
+    background-color:#a757bb;
+  }
+  
+  .popup-login, .popup-singup{
+    background-color: #e294f549;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .popup-login form input{
+    margin-left: 27px;
+    margin-top: 4px;
+  }
+  
+  .popup-content{
+    height: 280px;
+    width: 380px;
+    background-color: #e294f5;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .popup-content img:first-child{
+    width: 14%;
+  }
+  
+
+  .popup-content-singup{
+    margin-top: 100px;
+    height: 350px;
+    width: 380px;
+    background-color: #e294f5;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .close-popup, .close-popup-singup, .close-popup-contactanos{
+    width: 5%;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+  }
+  
+  .popup-content input{
+    margin: 20px auto;
+    display: block;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .popup-content-singup input{
+    display: block;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 46px;
+    margin-top: 20px;
+  }
+
+  .popup-content-singup input:last-child{
+    margin-left: 110px;
+    width: 30%;
+    text-align: center;
+  }
+  .popup-content-singup h1{
+    font-family: "pacifico";
+    font-size: 30px;
+    margin-left: -60px;
+    color:#461453;
+  }
+
+
+  /********POP UP CONTACTANOS (LAS VARIABLES
+  QUE NO APARECEN HAN SIDO DECLARADAS ARRIBA*******/
+
+  .popup-contactanos{
+    background-color: #e294f549;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.popup-content-contactanos{
+    height: 350px;
+    width: 380px;
+    background-color: #e294f5;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+
+
+
+/*Pagina de Filtro*/
+
+.cajafiltro {
+    display: flex;
+    flex-direction: row;
+    background-color:#ecc0f8;
+}
+
+.filtro {
+    float: left;
+    flex-direction:column;
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    background-color:#ecd0f4;
+}
+
+.main_filtro{
+    width: 75%;
+}
+
+/*Css Página normas y consejos de seguridad*/
+
+.main_normas, .main_consejos_seguridad{
+    font-family: "pacifico";
+    background-color:#ecc0f8;
+}
+
+.main_consejos_seguridad{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.normas{
+    margin-left: 50px;
+    padding-right: 40px;
+}
+
+.main_normas h1, .main_consejos_seguridad h1{
+    text-align: center;
+    font-size: 50px;
+    color:#461453;
+}
+
+.normas h2, .main_consejos_seguridad h2{
+    color:#461453;
+    font-size: 30px;
+}
+
+.normas h2{
+    text-align: start;
+}
+
+.normas ul, .main_consejos_seguridad ul{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.normas strong, .main_consejos_seguridad h3{
+    font-size: 20px;
+    color:#9c15be;
+}
+
+.normas li{
+    margin-bottom: 20px;
+}
+
+.denuncias h2{
+    color:#461453;
+    text-align: center;
+    font-size: 30px;
+}
+
+.denuncias p{
+    margin-left: 100px;   
+}
+
+.denuncias a{
+    color:#9c15be;
+}
+
+.denuncias a:hover{
+    color:#cf44f2;
+    transition: 0.3s;
+}
+.denuncias a:last-child{
+   text-decoration: none;
+   margin-left: 10px;
+
+}
+
+.denuncias{
+    padding-bottom: 10px;
+}
+
+/*Formulario de la pagina de registro*/
+.main_form{
+    background-color: #e294f5;
+}
+
+.formulario {
+    text-align: center;
+    font-family: 'Pacifico';
+    color: black;
+    background: #e294f5;
+    width: 400px;
+    height: 265px;
+    margin-left: 430px;
+    font-size: 16px;
+
+}
+
+.formulario p {
+    font-size: 22px;
+}
+
+.formulario h1 {
+    font-size: 35px;
+}
+
+.formulario .continuar {
+    font-size: 15px;
+    font-family: 'Pacifico';
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+
+.formulario .continuar:hover {
+    color: #461453;
+}
+
+/*Formulario2 de la pagina de registro*/
+
+.formulario2 {
+    text-align: center;
+    font-family: 'Pacifico';
+    color: black;
+    background: #e294f5;
+    width: 400px;
+    height: 665px;
+    margin-top: 120px;
+    margin-left: 430px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+.formulario2 p {
+    font-size: 22px;
+}
+
+
+.formulario2 h1 {
+    font-size: 35px;
+}
+
+
+.formulario2 .continuar {
+    font-size: 15px;
+    font-family: 'Pacifico';
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+
+.formulario2 .continuar:hover {
+    color: #461453;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    background-color: #e294f5;
+    font-family: 'Pacifico';
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.contacto {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.contacto a, .consejos a {
+    text-decoration: none;
+    color: #461453;
+    font-size: 30px;
+}
+
+.social_media {
+    margin-left: 550px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #461453;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.social_media a:hover, .contacto a:hover, .consejos a:hover {
+    transition: 0.5s;
+    color: #9c15be;
+}
+
+.consejos p {
+    font-size: 15px;
+}
+
+.consejos {
+    margin-left: 180px;
+    /*para responsive 220*/
+    margin-top: 10px;
+    color: #461453;
+}
+
+.consejos:last-child {
+    text-align: center;
+}
+
+/*------------------------------------------------
+            FORMULARIO DE CONTACTO
+-------------------------------------------------*/
+#main_contacto{
+    background-color: #e294f5;
+    margin: 0;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: none;
+    font-family: "pacifico";
+    padding-right: 100px;
+}
+
+input, textarea{
+    font-family: "pacifico";
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 310px;
+    max-width: 310px;
+}
+
+#boton{
+    background-color: #cf44f2;
+    color:#ecc0f8;
+}
+
+#boton:hover{
+    cursor:pointer;
+}
+
+/*Pagina Bienvenido*/
+.bienvenida h1{
+    font-size: 50px;
+    font-family: 'pacifico';
+    text-align: center;
+    color:#461453;
+}
+
+.bienvenida p{
+    font-size: 29px;
+    font-family: 'pacifico';
+    text-align: center;
+    margin-top: 20px;
+}
+.bienvenida{
+    background: #ecc0f8;
+    height: 447px;
+}
+.hola{
+    text-align: center;
+    background: #d787eb;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 650px;
+    font-family: 'pacifico';
+    font-size: 24px;
+    margin-top: 50px;
+    
+}
+
+/*Responsive header*/
+@media(max-width:844px) {
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#461453;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        margin-top:30px ;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 25px;
+        color: #d787eb;
+
+    }
+    nav ul li a:hover{
+        color:#9c15be;
+        transition: 0.4s;
+
+
+    }
+    #check:checked ~ ul {
+        left:0;
+
+    }
+
+
+    /*Responsive formulario*/
+
+
+    .formulario {
+        width: 350px;
+        height: 515px;
+        margin-left: 20px;
+        margin-top: 72px;
+    }
+
+    .formulario h1 {
+        font-size: 18px;
+    }
+
+    .formulario p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .fomulario select option {
+        font-size: 11px;
+    }
+
+    .formulario .continuar {
+        font-size: 10px;
+        width: 58px;
+    }
+
+    .formulario .continuar:hover {
+        color: #F54D4E;
+    }
+
+    /*Responsive descripcion*/
+
+    .descripcion {
+        font-size: 20px;
+        width: 95%;
+        padding: 8px;
+        border-radius: 15px;
+    }
+
+    /*Responsive Footer*/
+
+    .footer {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .contacto {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .social_media a{
+        font-size: 20px;
+    }
+
+     .social_media {
+        margin-left: 40px;
+        margin-top: 50px;
+        width: fit-content;
+       
+    }
+    
+    .consejos{
+        width: fit-content;
+        margin-top: 20px;
+        margin-left: 170px;
+        position: absolute;
+    }
+
+    .contacto a, .consejos a {
+        font-size: 22px;
+    }
+}
